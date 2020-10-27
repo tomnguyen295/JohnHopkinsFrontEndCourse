@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&family=Questrial&family=Righteous&display=swap');
+
+
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans HK', monospace;
+    background: linear-gradient(to right, turquoise, lightgreen);
+}
+
+.site-title {
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    text-shadow: 5px 5px 8px crimson;
+}
+
+.container {
+    display: grid;
+    /* outline: 2px solid black; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr; */
+}
+
+
+
+
+.box {
+    background: linear-gradient(135deg, #666, #ddd);
+    outline: 3px inset rgb(163, 0, 0);
+    margin: 20px;
+    /* padding: 10px; */
+}
+
+.box .box-title {
+    width: 150px;
+    padding: 3px 0px;
+    text-align: center;
+    float: right;
+    border: 2px outset rgb(148, 0, 0);
+
+}
+
+.col:nth-child(1) .box-title {
+    background-color: pink;
+}
+
+.col:nth-child(2) .box-title {
+    background-color: rgb(129, 9, 9);
+    color: white;
+}
+
+.col:nth-child(3) .box-title {
+    background-color: rgb(255, 255, 73);
+}
+
+.box .box-content {
+    clear: both;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+
+
+
+
+/* 12 column grid setup */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 767px) {
+    .col {
+        width: 100%;
+    }
+}
